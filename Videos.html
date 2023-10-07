@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="videos.css">
+</head>
+<body>
+    <div class="sidebar">
+       <a href="file:///c%3A/Users/TheMa/Documents/My%20Web%20Sites/Artstars/Videos.html"><img src="res/images/svg/video-svgrepo-com.svg" width="65%" style="filter: invert(100%); opacity: 0.5; display: block; margin-left: auto; margin-right: auto;"></a>
+       <a href="file:///c%3A/Users/TheMa/Documents/My%20Web%20Sites/Artstars/ref.html"><img src="res/images/svg/image-square-svgrepo-com.svg" width="65%" style="filter: invert(100%); opacity: 0.5;  display: block; margin-left: auto; margin-right: auto;"></a>
+    </div>
+    <div id="basic" class="section">
+        <b><p class="main">Basics To Drawing</p></b>
+        <div class="container">
+            <a class="link" id="Wz6DrQeQ5rI" href=""  target="_blank"><div class="video"></div></a>
+            <h4 id="title">Drawing for Beginners - Brad's Art School</h4>
+        </div>
+        <div class="container">
+            <a class="link" id="-6F5q_5HC3o" href=""  target="_blank"><div class="video"></div></a>
+            <h4 id="title">Draw Anything Simple Shapes - RapidFireArt</h4>
+        </div>
+        <div class="container">
+            <a class="link" id="-Ww0BXehQ5E" href=""  target="_blank"><div class="video"></div></a>
+            <h4 id="title">Imagination Drawing - Proko</h4>
+        </div>
+        <div class="container">
+            <a class="link" id="iTey_rv-Trc" href=""  target="_blank"><div class="video"></div></a>
+            <h4 id="title">Construction - Brad's Art School</h4>
+        </div>
+        <div class="container">
+            <a class="link" id="6T_-DiAzYBc" href=""  target="_blank"><div class="video"></div></a>
+            <h4 id="title">Antonio Stappaerts' Drawing Anything - Proko</h4>
+        </div>
+        </div>
+         <div id="head" class="section">
+            <b><p class="main">Heads & Loomis</p></b>
+            <div class="container">
+                <a class="link" id="6i6JDwEwXJI" href=""  target="_blank"><div class="video"></div></a>
+                <h4 id="title">Loomis Method Heads - David Finch</h4>
+            </div>
+            <div class="container">
+                <a class="link" id="wAOldLWIDSM" href=""  target="_blank"><div class="video"></div></a>
+                <h4 id="title">Loomis Method Heads P1 - Proko</h4>
+            </div>
+            <div class="container">
+                <a class="link" id="JC2ZppKHCqU" href=""  target="_blank"><div class="video"></div></a>
+                <h4 id="title">Head Types Loomis P2 - Proko</h4>
+            </div>
+            <div class="container">
+                <a class="link" id="P9LOUHmPhS8" href=""  target="_blank"><div class="video"></div></a>
+                <h4 id="title">Intuitive Portraits Loomis P3 - Proko</h4>
+            </div>
+         </div>
+         <div id="character" class="section">
+            <b><p class="main">Character Design</p></b>
+            <div class="container">
+                <a class="link" id="21vAuOrAbt4" href=""  target="_blank"><div class="video"></div></a>
+                <h4 id="title">Character Design Tips - Whyt Manga</h4>
+            </div>
+            <div class="container">
+                <a class="link" id="FqX-UMVTLHI" href=""  target="_blank"><div class="video"></div></a>
+                <h4 id="title">Concept Art - Riot Games</h4>
+            </div>
+            <div class="container">
+                <a class="link" id="J8g3JKobvnk" href=""  target="_blank"><div class="video"></div></a>
+                <h4 id="title">Scott Flanders Design Workflow - Proko</h4>
+            </div>
+            <div class="container">
+                <a class="link" id="W5QgC5UVYlU" href=""  target="_blank"><div class="video"></div></a>
+                <h4 id="title">Illustration Master: Character Design - Ross Draws</h4>
+            </div>
+            <div class="container">
+                <a class="link" id="gJBkaYTxnrU" href=""  target="_blank"><div class="video"></div></a>
+                <h4 id="title">Shape Language - ArtWod</h4>
+            </div>
+         </div>
+        <script>
+            let text1 = "https://www.youtube.com/watch?v=";
+
+            // Get all elements with class "link"
+            let linkElements = document.getElementsByClassName("link");
+
+            // Loop through each link element and set its href attribute based on its id
+            for (let i = 0; i < linkElements.length; i++) {
+                let linkElement = linkElements[i];
+                let id = linkElement.id;
+                linkElement.href = text1 + id;
+            }
+        </script>
+        <script>
+              // Function to set the background image of the video div
+              function setThumbnailBackground(videoId, divElement) {
+                let thumbnailUrl = `https://img.youtube.com/vi/${videoId}/0.jpg`;
+                divElement.style.backgroundImage = `url(${thumbnailUrl})`;
+            }
+
+            // Get all elements with class "link"
+            let linkElements0 = document.getElementsByClassName("link");
+
+            // Loop through each link element and set its href attribute based on its id
+            for (let i = 0; i < linkElements0.length; i++) {
+                let linkElement0 = linkElements0[i];
+                let id = linkElement0.id;
+                linkElement0.href = "https://www.youtube.com/watch?v=" + id;
+
+                // Set the background image for the corresponding video div
+                let videoDiv = linkElement0.querySelector(".video");
+                setThumbnailBackground(id, videoDiv);
+            }
+        </script>
+</body>
+</html>

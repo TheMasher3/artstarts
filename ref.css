@@ -1,0 +1,22 @@
+.sidebar {
+    height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #11151c;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+body{
+    background-color: #131924;
+  }
+  @font-face {
+    font-family: VarelaRound;
+    src: url(res/fonts/VarelaRound-Regular.ttf);
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

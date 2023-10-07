@@ -1,0 +1,91 @@
+.sidebar {
+    height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #11151c;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.main {
+  color: lightblue;
+  letter-spacing: 3px;
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    font-family: VarelaRound;
+    position: absolute;
+    left: 30px;
+    font-size: 30px;
+  }
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+.section{
+    background-color: transparent;
+    height: 350px;
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    overflow: auto;
+    white-space: nowrap;
+}
+.video{
+  border-radius: 30px;
+    height: 200px;
+    width: 350px;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(0 0 0.75rem rgba(3, 18, 120, 0.5));
+    
+}
+.video:hover {
+    background-color: #777;
+  }
+@font-face {
+  font-family: VarelaRound;
+  src: url(res/fonts/VarelaRound-Regular.ttf);
+}
+body{
+  background-color: #131924;
+}
+/*.section::-webkit-scrollbar{
+display: none;
+}*/
+.container{
+  margin-right: 30px;
+  height: 200px;
+  width: 350px;
+  margin-top: 75px;
+  display: inline-block;
+  text-align: center;
+}
+#title{
+  color: aliceblue;
+  font-family: VarelaRound;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+.section::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.section::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.section::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.section::-webkit-scrollbar-thumb:hover {
+background: lightgrey;
+}
