@@ -20,3 +20,14 @@ body{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+  h1{
+    font-family: VarelaRound;
+    margin-left: 160px;
+    color: lightblue;
+  }
+  .option{
+    margin-left: 160px;
+    width: 100px;
+    height: 100px;
+    color: white;
+  }
